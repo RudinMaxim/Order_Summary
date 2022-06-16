@@ -23,6 +23,7 @@ body{
     width: 100vw;
     background: url(./images/pattern-background-desktop.svg) no-repeat;
     background-color: var(--color_Very_pale_blue);
+    background-size: 100% 100%;
 }
 .Summary__Card {
     max-width:450px;
