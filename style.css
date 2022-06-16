@@ -1,0 +1,108 @@
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color_Pale_blue: hsl(225, 100%, 94%);
+    --color_Bright_blue: hsl(245, 75%, 52%);
+    --color_Very_pale_blue: hsl(225, 100%, 98%);
+    --color_Desaturated_blue: hsl(224, 23%, 55%);
+    --color_Dark_blue: hsl(223, 47%, 23%);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: url(./images/pattern-background-desktop.svg) no-repeat;
+    background-color: var(--color_Very_pale_blue);
+}
+.Summary__Card {
+    max-width:450px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Card__img img{
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 20px;
+}
+.Card__title {
+    margin-bottom: 20px;
+    color: var(--color_Dark_blue);
+}
+.Card__subTitle {
+    margin-bottom: 20px;
+    color: var(--color_Desaturated_blue);
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Card__plan-bar {
+    background-color: var(--color_Very_pale_blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 80px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.left_plan {
+    display: flex;
+}
+.Card__main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.left_plan img{
+    margin-right: 15px;
+}
+.left_plan-col {
+}
+.left_plan-Name{
+    color: var(--color_Dark_blue);
+}
+.left_plan-pris {
+    color: var(--color_Desaturated_blue);
+}
+.Card__proceed {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 400px;
+    border-radius: 15px;
+    background-color: var(--color_Bright_blue);
+}
+.Card__proceed:hover {
+    opacity: 0.9;
+}
+.Card__cancel {
+    color: var(--color_Desaturated_blue);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: white;
+}
